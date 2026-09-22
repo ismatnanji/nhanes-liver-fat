@@ -1,0 +1,7 @@
+"step","n","excluded"
+"Liver elastography records (LUX_L)",7199,NA
+"Aged 20 or older",6064,1135
+"Complete elastography exam",5277,787
+"Usable CAP with >= 10 valid measurements",5276,1
+"Not pregnant",5276,0
+"No current hepatitis B or C infection",5227,49

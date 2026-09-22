@@ -9,7 +9,8 @@ out_dir <- "data/processed"
 read_raw <- function(tbl) readRDS(file.path(raw_dir, paste0(tbl, ".rds")))
 
 tables <- c("LUX_L", "DEMO_L", "ALQ_L", "DR1TOT_L",
-            "BMX_L", "BIOPRO_L", "TRIGLY_L", "HDL_L")
+            "BMX_L", "BIOPRO_L", "TRIGLY_L", "HDL_L",
+            "HEPBD_L", "HEPC_L")
 raw_list <- setNames(lapply(tables, read_raw), tables)
 
 # ---- 1. Check the join key -------------------------------------------------
@@ -25,7 +26,9 @@ merged <- raw_list$LUX_L |>
   left_join(raw_list$BMX_L,    by = "SEQN") |>
   left_join(raw_list$BIOPRO_L, by = "SEQN") |>
   left_join(raw_list$TRIGLY_L, by = "SEQN") |>
-  left_join(select(raw_list$HDL_L, -WTPH2YR), by = "SEQN")
+  left_join(select(raw_list$HDL_L, -WTPH2YR), by = "SEQN") |>
+  left_join(raw_list$HEPBD_L, by = "SEQN") |>
+  left_join(raw_list$HEPC_L,  by = "SEQN")
 
 stopifnot(nrow(merged) == nrow(raw_list$LUX_L))
 
@@ -94,7 +97,12 @@ vars <- c(
   chol_diet_mg    = "DR1TCHOL",
   choline_mg      = "DR1TCHL",
   caffeine_mg     = "DR1TCAFF",
-  alcohol_g       = "DR1TALCO"
+  alcohol_g       = "DR1TALCO",
+
+  # viral hepatitis
+  hbsag   = "LBDHBG",   # hepatitis B surface antigen (current HBV infection)
+  hcv_ab  = "LBDHCI",   # hepatitis C antibody, confirmed (past or current)
+  hcv_rna = "LBXHCR"    # hepatitis C RNA (current HCV infection)
 )
 missing_vars <- setdiff(vars, names(merged))
 if (length(missing_vars) > 0) {

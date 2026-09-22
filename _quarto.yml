@@ -1,0 +1,29 @@
+project:
+  type: default
+  execute-dir: project      # code runs from the repo root, so paths like
+                            # "data/processed/analysis.rds" work in every notebook
+
+author: "Ismat"
+
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: show
+    code-tools: true
+    embed-resources: true   # one self-contained HTML file
+    theme: cosmo
+  gfm:                      # GitHub-flavored markdown: renders on GitHub with plots
+    toc: true
+
+execute:
+  echo: true
+  warning: false
+  message: false
+
+knitr:
+  opts_chunk:
+    fig.width: 7
+    fig.height: 4.5
+    fig.align: center

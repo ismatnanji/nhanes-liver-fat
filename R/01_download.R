@@ -12,7 +12,9 @@ tables <- c(
   body   = "BMX_L",     # body measures (BMI, waist)
   biopro = "BIOPRO_L",  # standard biochemistry (ALT, AST, GGT)
   trig   = "TRIGLY_L",  # triglycerides (fasting subsample)
-  hdl    = "HDL_L"      # HDL cholesterol
+  hdl    = "HDL_L",     # HDL cholesterol
+  hepb   = "HEPBD_L",   # hepatitis B core antibody + surface antigen
+  hepc   = "HEPC_L"     # hepatitis C antibody + RNA
 )
 
 raw_dir <- "data/raw"

@@ -1,0 +1,45 @@
+---
+title: "01 · Simple Linear Regression: Liver Fat and BMI"
+date: today
+---
+
+```{r}
+#| label: setup
+source("R/_common.R")
+```
+
+## Question
+
+<!-- What relationship are you testing, and why does it matter? -->
+
+## Analytic sample
+
+`R/03_exclusions.R` is written: output/exclusion_flow.csv
+
+```{r}
+#| label: sample
+slr_data <- analytic |> filter(!is.na(bmi))
+nrow(slr_data)
+```
+
+## Exploratory plot
+
+<!-- Scatterplot of the outcome against the predictor -->
+
+## Fitting the model
+
+<!-- lm(), summary(), and the fitted line on the scatterplot -->
+
+## Interpreting the coefficients
+
+<!-- What do the intercept and slope mean in real units? -->
+
+## How well does the model fit?
+
+<!-- R², residual standard error -->
+
+## Residuals: first look
+
+<!-- Residuals vs fitted. Anything worrying? (Formal diagnostics come in a later chapter.) -->
+
+## Conclusions and limitations

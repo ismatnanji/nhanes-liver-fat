@@ -8,3 +8,7 @@ data/raw/*
 !data/raw/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
+analysis/*.html
+
+/.quarto/
+**/*.quarto_ipynb

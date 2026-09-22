@@ -11,10 +11,12 @@ This document records how the analysis dataset is built from raw NHANES files, a
 | 1 | `R/01_download.R` | CDC NHANES website | 8 raw files in `data/raw/` |
 | 1b | `R/01b_variable_inventory.R` | `data/raw/*.rds` | `output/variable_inventory.csv` |
 | 2 | `R/02_clean_merge.R` | `data/raw/*.rds` | `data/processed/merged_full.rds` and `data/processed/analysis.rds` |
+| 3 | `R/03_exclusions.R` | `data/processed/analysis.rds` | `data/processed/analytic_sample.rds` and `output/exclusion_flow.csv` |
 
 - **Survey cycle:** NHANES August 2021 – August 2023 (file suffix `_L`)
-- **Final analysis dataset:** 7,199 rows (one per person with a liver elastography record) × 52 columns
+- **Analysis dataset (`analysis.rds`):** 7,199 rows (one per person with a liver elastography record) × 55 columns
 - **People with a usable CAP value:** 6,699
+- **Analytic sample (`analytic_sample.rds`):** 5,227 participants after exclusions (see section 7)
 
 Data files are not stored on GitHub. Running the scripts in order rebuilds everything.
 
@@ -22,7 +24,7 @@ Data files are not stored on GitHub. Running the scripts in order rebuilds every
 
 ## 2. Step 1: Downloading the raw data
 
-`R/01_download.R` downloads eight NHANES tables with the `nhanesA` package and saves each as an `.rds` file.
+`R/01_download.R` downloads ten NHANES tables with the `nhanesA` package and saves each as an `.rds` file.
 
 | File | Contents | Rows | Who is included |
 |---|---|---|---|
@@ -34,6 +36,8 @@ Data files are not stored on GitHub. Running the scripts in order rebuilds every
 | `BIOPRO_L` | Standard biochemistry profile | 7,199 | Exam participants aged 12+ |
 | `ALQ_L` | Alcohol use questionnaire | 6,337 | Adults 18+ |
 | `TRIGLY_L` | Fasting triglycerides and LDL | 3,996 | Morning fasting subsample only |
+| `HEPBD_L` | Hepatitis B core antibody and surface antigen | [n] | Exam participants aged 6+ |
+| `HEPC_L` | Hepatitis C antibody and RNA | [n] | Exam participants aged 6+ |
 
 **Decisions made in this step:**
 
@@ -46,7 +50,7 @@ Data files are not stored on GitHub. Running the scripts in order rebuilds every
 
 ## 3. Step 1b: Variable inventory
 
-`R/01b_variable_inventory.R` lists every variable in the eight raw files (295 in total) with its label, type, number and percentage missing, and number of unique values. The result is saved as `output/variable_inventory.csv`, which serves as the full dictionary of the raw data.
+`R/01b_variable_inventory.R` lists every variable in the eight raw files with its label, type, number and percentage missing, and number of unique values. The result is saved as `output/variable_inventory.csv`, which serves as the full dictionary of the raw data.
 
 Some CDC labels are Latin-1 encoded (e.g. "µg/dL"). The script converts only the labels that are not valid UTF-8 before writing the CSV as UTF-8.
 
@@ -68,11 +72,11 @@ Every table uses `SEQN` (respondent sequence number) as the participant ID. The 
 - **Column clash fixed:** `WTPH2YR` (blood-draw weight) appears in both `BIOPRO_L` and `HDL_L`. It is removed from `HDL_L` before joining so there is only one copy.
 - **Check:** the script confirms the merged data still has exactly 7,199 rows, and warns if any `.x`/`.y` duplicate columns appear.
 
-The full merge (7,199 rows × 287 columns) is saved as `data/processed/merged_full.rds`, so any variable not selected below can still be retrieved later.
+The full merge (7,199 rows × 295 columns) is saved as `data/processed/merged_full.rds`, so any variable not selected below can still be retrieved later.
 
 ### 4.3 Select and rename
 
-49 variables are selected from the full merge and given readable names (see the data dictionary in section 5).
+52 variables are selected from the full merge and given readable names (see the data dictionary in section 5).
 
 **Not selected:**
 
@@ -237,6 +241,15 @@ All values are totals for the recall day, and are `NA` unless `diet_status = 1`.
 | `caffeine_mg` | DR1TCAFF | Caffeine | mg |
 | `alcohol_g` | DR1TALCO | Alcohol from recall (independent check on questionnaire intake) | g |
 
+### Viral hepatitis
+
+Used only for exclusions (section 7).
+
+| Column | NHANES variable | Description | Values | Who has it |
+|---|---|---|---|---|
+| `hbsag` | LBDHBG | Hepatitis B surface antigen (marker of current HBV infection) | 1 = Positive, 2 = Negative | Exam participants 6+ with a blood sample |
+| `hcv_ab` | LBDHCI | Hepatitis C antibody, confirmed (past or current HCV infection) | See `nhanesCodebook("HEPC_L", "LBDHCI")` | Exam participants 6+ with a blood sample |
+| `hcv_rna` | LBXHCR | Hepatitis C RNA (marker of current HCV infection) | 1 = Positive, 2 = Negative | Tested only in antibody-positive participants |
 ---
 
 ## 6. Known limitations
@@ -246,19 +259,34 @@ All values are totals for the recall day, and are `NA` unless `diet_status = 1`.
 - **Self-report:** alcohol intake and diet are self-reported. A single-day recall is a noisy measure of usual diet.
 - **Non-fasting triglycerides** vary with the last meal. Key results should be checked in the fasting subsample using `trig_fast`.
 - **Alcohol quantities** are approximations from categorical answers (see section 4.4).
-
+- **Hepatitis exclusion** removes only confirmed current infections. Participants without hepatitis test results are kept, so a small number of undetected infections may remain.
 ---
 
-## 7. Open decisions (for `R/03_exclusions.R`)
+## 7. Analytic sample (`R/03_exclusions.R`)
 
-These define the analytic sample and have not been applied yet:
+The analytic sample is defined by applying these exclusions in order:
 
-- [ ] Age range. Adults only? 20+ if education is used as a covariate?
-- [ ] Scan quality. Complete exams only, or also partial exams with a CAP value? Minimum `n_valid`? Maximum `cap_iqr` / `stiff_iqr_ratio`?
-- [ ] Pregnancy. Confirm with `table(analysis$preg, useNA = "ifany")` that no pregnant participants have scans.
-- [ ] Other liver disease. Hepatitis B/C exclusion would need the hepatitis lab files (not yet downloaded).
-- [ ] Missing alcohol data. Complete-case analysis, or another approach?
+| Step | n | Excluded |
+|---|---|---|
+| Liver elastography records (LUX_L) | 7,199 | — |
+| Aged 20 or older | 6,064 | 1,135 |
+| Complete elastography exam | 5,277 | 787 |
+| Usable CAP with ≥ 10 valid measurements | 5,276 | 1 |
+| Not pregnant | 5,276 | 0 |
+| No current hepatitis B or C infection | **5,227** | 49 |
 
+The same table is saved as `output/exclusion_flow.csv`.
+
+**Decisions and rationale:**
+
+- **Age 20+.** Education (`educ`) is only collected from age 20, and the alcohol questionnaire from 18. Starting at 20 keeps every covariate available.
+- **Complete exams only.** Partial exams (`scan_status = 2`) are excluded, even when they produced a CAP value.
+- **At least 10 valid measurements.** This removed only one person, so the rule is nearly redundant with the complete-exam requirement. It is kept as an explicit quality check.
+- **CAP IQR cutoff not applied.** A CAP IQR < 40 dB/m rule would have removed 2,534 scanned participants, and its use is debated in the literature.
+- **Stiffness reliability rule not applied.** The IQR/median ≤ 0.30 rule applies to liver stiffness, not CAP. Apply it in any analysis with `stiffness` as the outcome.
+- **Pregnancy.** This removed nobody: all 41 pregnant participants were ineligible for the scan. The step documents the check.
+- **Viral hepatitis.** Participants with current infection (`hbsag = 1` or `hcv_rna = 1`) are excluded, as other causes of liver disease are standard exclusions in steatosis studies. Participants without test results are kept.
+- **Missing covariates are not excluded here.** Missing alcohol, lab, or diet values are handled model by model, so each model uses every participant with complete data for its own variables.
 ---
 
 ## 8. Rebuilding the data
@@ -267,4 +295,5 @@ These define the analytic sample and have not been applied yet:
 source("R/01_download.R")              # downloads raw files (skips existing ones)
 source("R/01b_variable_inventory.R")   # optional: regenerates the variable inventory
 source("R/02_clean_merge.R")           # builds merged_full.rds and analysis.rds
+source("R/03_exclusions.R")            # builds analytic_sample.rds and exclusion_flow.csv
 ```

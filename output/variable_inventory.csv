@@ -271,6 +271,16 @@
 "HDL_L","WTPH2YR","Phlebotomy 2 Year Weight","numeric",0,0,7138
 "HDL_L","LBDHDD","Direct HDL-Cholesterol (mg/dL)","numeric",1178,14.6,103
 "HDL_L","LBDHDDSI","Direct HDL-Cholesterol (mmol/L)","numeric",1178,14.6,103
+"HEPBD_L","SEQN","Respondent sequence number","numeric",0,0,8068
+"HEPBD_L","WTPH2YR","Phlebotomy 2 Year Weight","numeric",0,0,7138
+"HEPBD_L","LBXHBC","Hepatitis B core antibody","numeric",948,11.8,4
+"HEPBD_L","LBDHBG","Hepatitis B surface antigen","numeric",950,11.8,3
+"HEPBD_L","LBDHD","Hepatitis D antibody (anti-HDV)","numeric",950,11.8,2
+"HEPC_L","SEQN","Respondent sequence number","numeric",0,0,8068
+"HEPC_L","WTPH2YR","Phlebotomy 2 Year Weight","numeric",0,0,7138
+"HEPC_L","LBXHCR","Hepatitis C RNA","numeric",953,11.8,4
+"HEPC_L","LBDHCI","Hepatitis C Antibody (confirmed)","numeric",962,11.9,5
+"HEPC_L","LBXHCG","Hepatitis C Genotype","numeric",8050,99.8,5
 "LUX_L","SEQN","Respondent sequence number","numeric",0,0,7199
 "LUX_L","LUAXSTAT","Elastography exam status","numeric",0,0,4
 "LUX_L","LUARXNC","Reason for partial exam","numeric",6685,92.9,4
