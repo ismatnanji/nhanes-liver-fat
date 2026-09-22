@@ -36,6 +36,8 @@ this repository.
 3. Run `R/02_clean_merge.R` to build the analysis dataset
 4. Render the notebooks in `analysis/`
 
+See [docs/data_processing.md](docs/data_processing.md) for full processing details and the data dictionary.
+
 ## Limitations
 - Cross-sectional design: results describe associations, not causation.
 - Alcohol intake and diet are self-reported.

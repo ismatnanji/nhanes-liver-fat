@@ -1,0 +1,296 @@
+"table","variable","label","class","n_missing","pct_missing","n_unique"
+"ALQ_L","SEQN","Respondent sequence number","numeric",0,0,6337
+"ALQ_L","ALQ111","Ever had a drink of any kind of alcohol","numeric",856,13.5,4
+"ALQ_L","ALQ121","Past 12 mos how often drink alc bev","numeric",1415,22.3,14
+"ALQ_L","ALQ130","Avg # alcoholic drinks/day/past 12 mos","numeric",2268,35.8,18
+"ALQ_L","ALQ142","# days have 4/5 drinks/past 12 mos","numeric",2255,35.6,14
+"ALQ_L","ALQ270","# times 4/5 drinks in 2hrs/past 12 mos","numeric",3971,62.7,14
+"ALQ_L","ALQ280","# times 8+ drinks in 1 day/past 12 mos","numeric",3975,62.7,14
+"ALQ_L","ALQ151","Ever have 4/5 or more drinks every day","numeric",1436,22.7,5
+"ALQ_L","ALQ170","# times 4/5 drinks on occasion/past mo","numeric",3979,62.8,22
+"BIOPRO_L","SEQN","Respondent Sequence Number","numeric",0,0,7199
+"BIOPRO_L","WTPH2YR","Phlebotomy 2 Year Weight","numeric",0,0,6600
+"BIOPRO_L","LBXSATSI","Alanine Aminotransferase (ALT) (IU/L)","numeric",878,12.2,126
+"BIOPRO_L","LBXSAL","Albumin, refrigerated serum (g/dL)","numeric",833,11.6,34
+"BIOPRO_L","LBDSALSI","Albumin, refrigerated serum (g/L)","numeric",833,11.6,34
+"BIOPRO_L","LBXSAPSI","Alkaline Phosphatase (ALP) (IU/L)","numeric",872,12.1,320
+"BIOPRO_L","LBXSASSI","Aspartate Aminotransferase (AST) (IU/L)","numeric",891,12.4,109
+"BIOPRO_L","LBXSC3SI","Bicarbonate (mmol/L)","numeric",874,12.1,23
+"BIOPRO_L","LBXSBU","Blood Urea Nitrogen (mg/dL)","numeric",873,12.1,58
+"BIOPRO_L","LBDSBUSI","Blood Urea Nitrogen (mmol/L)","numeric",873,12.1,58
+"BIOPRO_L","LBXSCLSI","Chloride (mmol/L)","numeric",870,12.1,34
+"BIOPRO_L","LBXSCK","Creatine Phosphokinase (CPK) (U/L)","numeric",878,12.2,566
+"BIOPRO_L","LBXSCR","Creatinine, refrigerated serum (mg/dL)","numeric",873,12.1,189
+"BIOPRO_L","LBDSCRSI","Creatinine, refrigerated serum (umol/L)","numeric",873,12.1,189
+"BIOPRO_L","LBXSGB","Globulin (g/dL)","numeric",835,11.6,38
+"BIOPRO_L","LBDSGBSI","Globulin (g/L)","numeric",835,11.6,38
+"BIOPRO_L","LBXSGL","Glucose, refrigerated serum (mg/dL)","numeric",842,11.7,237
+"BIOPRO_L","LBDSGLSI","Glucose, refrigerated serum (mmol/L)","numeric",842,11.7,30
+"BIOPRO_L","LBXSGTSI","Gamma Glutamyl Transferase (GGT) (IU/L)","numeric",872,12.1,210
+"BIOPRO_L","LBDSGTLC","GGT Comment Code","numeric",872,12.1,3
+"BIOPRO_L","LBXSIR","Iron, refrigerated serum (µg/dL)","numeric",835,11.6,222
+"BIOPRO_L","LBDSIRSI","Iron, refrigerated serum (umol/L)","numeric",835,11.6,48
+"BIOPRO_L","LBXSLDSI","Lactate Dehydrogenase (LDH) (U/L)","numeric",2459,34.2,232
+"BIOPRO_L","LBXMAGN","Magnesium (mg/dL)","numeric",875,12.2,22
+"BIOPRO_L","LBXSOSSI","Osmolality (mmol/Kg)","numeric",877,12.2,60
+"BIOPRO_L","LBXSPH","Phosphorus (mg/dL)","numeric",877,12.2,50
+"BIOPRO_L","LBDSPHSI","Phosphorus (mmol/L)","numeric",877,12.2,50
+"BIOPRO_L","LBXSKSI","Potassium (mmol/L)","numeric",918,12.8,35
+"BIOPRO_L","LBXSNASI","Sodium (mmol/L)","numeric",833,11.6,32
+"BIOPRO_L","LBXSTB","Total Bilirubin (mg/dL)","numeric",874,12.1,40
+"BIOPRO_L","LBDSTBSI","Total Bilirubin (umol/L)","numeric",1006,14,39
+"BIOPRO_L","LBDSTBLC","Total Bilirubin Comment Code","numeric",874,12.1,3
+"BIOPRO_L","LBXSCA","Total Calcium (mg/dL)","numeric",837,11.6,40
+"BIOPRO_L","LBDSCASI","Total Calcium (mmol/L)","numeric",837,11.6,12
+"BIOPRO_L","LBXSCH","Cholesterol, refrigerated serum (mg/dL)","numeric",871,12.1,263
+"BIOPRO_L","LBDSCHSI","Cholesterol, refrigerated serum (mmol/L)","numeric",871,12.1,263
+"BIOPRO_L","LBXSTP","Total Protein (g/dL)","numeric",835,11.6,41
+"BIOPRO_L","LBDSTPSI","Total Protein (g/L)","numeric",835,11.6,41
+"BIOPRO_L","LBXSTR","Triglycerides, refrig serum (mg/dL)","numeric",840,11.7,447
+"BIOPRO_L","LBDSTRSI","Triglycerides, refrig serum (mmol/L)","numeric",840,11.7,447
+"BIOPRO_L","LBXSUA","Uric acid (mg/dL)","numeric",870,12.1,96
+"BIOPRO_L","LBDSUASI","Uric acid (umol/L)","numeric",870,12.1,96
+"BMX_L","SEQN","Respondent sequence number","numeric",0,0,8860
+"BMX_L","BMDSTATS","Body Measures Component Status Code","numeric",0,0,4
+"BMX_L","BMXWT","Weight (kg)","numeric",106,1.2,1390
+"BMX_L","BMIWT","Weight Comment","numeric",8515,96.1,4
+"BMX_L","BMXRECUM","Recumbent Length (cm)","numeric",8406,94.9,300
+"BMX_L","BMIRECUM","Recumbent Length Comment","numeric",8842,99.8,2
+"BMX_L","BMXHEAD","Head Circumference (cm)","numeric",8790,99.2,50
+"BMX_L","BMIHEAD","Head Circumference Comment","numeric",8860,100,1
+"BMX_L","BMXHT","Standing Height (cm)","numeric",361,4.1,996
+"BMX_L","BMIHT","Standing Height Comment","numeric",8726,98.5,3
+"BMX_L","BMXBMI","Body Mass Index (kg/m**2)","numeric",389,4.4,452
+"BMX_L","BMDBMIC","BMI Category - Children/Youth","numeric",6368,71.9,5
+"BMX_L","BMXLEG","Upper Leg Length (cm)","numeric",1525,17.2,232
+"BMX_L","BMILEG","Upper Leg Length Comment","numeric",8464,95.5,2
+"BMX_L","BMXARML","Upper Arm Length (cm)","numeric",292,3.3,352
+"BMX_L","BMIARML","Upper Arm Length Comment","numeric",8660,97.7,2
+"BMX_L","BMXARMC","Arm Circumference (cm)","numeric",298,3.4,392
+"BMX_L","BMIARMC","Arm Circumference Comment","numeric",8655,97.7,2
+"BMX_L","BMXWAIST","Waist Circumference (cm)","numeric",670,7.6,1050
+"BMX_L","BMIWAIST","Waist Circumference Comment","numeric",8513,96.1,2
+"BMX_L","BMXHIP","Hip Circumference (cm)","numeric",2084,23.5,765
+"BMX_L","BMIHIP","Hip Circumference Comment","numeric",8499,95.9,2
+"DEMO_L","SEQN","Respondent sequence number","numeric",0,0,11933
+"DEMO_L","SDDSRVYR","Data release cycle","numeric",0,0,1
+"DEMO_L","RIDSTATR","Interview/Examination status","numeric",0,0,2
+"DEMO_L","RIAGENDR","Gender","numeric",0,0,2
+"DEMO_L","RIDAGEYR","Age in years at screening","numeric",0,0,81
+"DEMO_L","RIDAGEMN","Age in months at screening - 0 to 24 mos","numeric",11556,96.8,26
+"DEMO_L","RIDRETH1","Race/Hispanic origin","numeric",0,0,5
+"DEMO_L","RIDRETH3","Race/Hispanic origin w/ NH Asian","numeric",0,0,6
+"DEMO_L","RIDEXMON","Six-month time period","numeric",3073,25.8,3
+"DEMO_L","RIDEXAGM","Age in months at exam - 0 to 19 years","numeric",9146,76.6,241
+"DEMO_L","DMQMILIZ","Served active duty in US Armed Forces","numeric",3632,30.4,4
+"DEMO_L","DMDBORN4","Country of birth","numeric",19,0.2,3
+"DEMO_L","DMDYRUSR","Length of time in US","numeric",10058,84.3,9
+"DEMO_L","DMDEDUC2","Education level - Adults 20+","numeric",4139,34.7,7
+"DEMO_L","DMDMARTZ","Marital status","numeric",4141,34.7,6
+"DEMO_L","RIDEXPRG","Pregnancy status at exam","numeric",10430,87.4,4
+"DEMO_L","DMDHHSIZ","Total number of people in the Household","numeric",0,0,7
+"DEMO_L","DMDHRGND","HH ref persons gender","numeric",7818,65.5,3
+"DEMO_L","DMDHRAGZ","HH ref persons age in years","numeric",7809,65.4,5
+"DEMO_L","DMDHREDZ","HH ref persons education level","numeric",8187,68.6,4
+"DEMO_L","DMDHRMAZ","HH ref persons marital status","numeric",7913,66.3,4
+"DEMO_L","DMDHSEDZ","HH ref persons spouses education level","numeric",9806,82.2,4
+"DEMO_L","WTINT2YR","Full sample 2-year interview weight","numeric",0,0,9821
+"DEMO_L","WTMEC2YR","Full sample 2-year MEC exam weight","numeric",0,0,8138
+"DEMO_L","SDMVSTRA","Masked variance pseudo-stratum","numeric",0,0,15
+"DEMO_L","SDMVPSU","Masked variance pseudo-PSU","numeric",0,0,2
+"DEMO_L","INDFMPIR","Ratio of family income to poverty","numeric",2041,17.1,472
+"DR1TOT_L","SEQN","Respondent sequence number","numeric",0,0,8860
+"DR1TOT_L","WTDRD1","Dietary day one sample weight","numeric",0,0,6440
+"DR1TOT_L","WTDR2D","Dietary two-day sample weight","numeric",2106,23.8,5708
+"DR1TOT_L","DR1DRSTZ","Dietary recall status","numeric",0,0,4
+"DR1TOT_L","DR1EXMER","Interviewer ID code","numeric",2063,23.3,14
+"DR1TOT_L","DRABF","Breast-fed infant (either day)","numeric",2126,24,3
+"DR1TOT_L","DRDINT","Number of days of intake","numeric",2106,23.8,3
+"DR1TOT_L","DR1DBIH","# of days b/w intake and HH interview","numeric",2485,28,134
+"DR1TOT_L","DR1DAY","Intake day of the week","numeric",2063,23.3,8
+"DR1TOT_L","DR1LANG","Language respondent used mostly","numeric",2058,23.2,5
+"DR1TOT_L","DR1MRESP","Main respondent for this interview","numeric",2113,23.8,9
+"DR1TOT_L","DR1HELP","Helped in responding for this interview","numeric",2113,23.8,12
+"DR1TOT_L","DBQ095Z","Type of table salt used","numeric",2063,23.3,6
+"DR1TOT_L","DBD100","How often add salt to food at table","numeric",4118,46.5,5
+"DR1TOT_L","DRQSPREP","Salt used in preparation?","numeric",2063,23.3,6
+"DR1TOT_L","DR1STY","Salt used at table yesterday?","numeric",2063,23.3,4
+"DR1TOT_L","DR1SKY","Type of salt used yesterday","numeric",7663,86.5,5
+"DR1TOT_L","DRQSDIET","On special diet?","numeric",2063,23.3,4
+"DR1TOT_L","DRQSDT1","Weight loss/Low calorie diet","numeric",8413,95,2
+"DR1TOT_L","DRQSDT2","Low fat/Low cholesterol diet","numeric",8790,99.2,2
+"DR1TOT_L","DRQSDT3","Low salt/Low sodium diet","numeric",8764,98.9,2
+"DR1TOT_L","DRQSDT4","Sugar free/Low sugar diet","numeric",8816,99.5,2
+"DR1TOT_L","DRQSDT5","Low fiber diet","numeric",8858,100,2
+"DR1TOT_L","DRQSDT6","High fiber diet","numeric",8853,99.9,2
+"DR1TOT_L","DRQSDT7","Diabetic diet","numeric",8767,99,2
+"DR1TOT_L","DRQSDT8","Weight gain/Muscle building diet","numeric",8833,99.7,2
+"DR1TOT_L","DRQSDT9","Low carbohydrate diet","numeric",8790,99.2,2
+"DR1TOT_L","DRQSDT10","High protein diet","numeric",8827,99.6,2
+"DR1TOT_L","DRQSDT11","Gluten-free/Celiac diet","numeric",8828,99.6,2
+"DR1TOT_L","DRQSDT12","Renal/Kidney diet","numeric",8847,99.9,2
+"DR1TOT_L","DRQSDT91","Other special diet","numeric",8712,98.3,2
+"DR1TOT_L","DR1TNUMF","Number of foods/beverages reported","numeric",2106,23.8,45
+"DR1TOT_L","DR1TKCAL","Energy (kcal)","numeric",2166,24.4,2761
+"DR1TOT_L","DR1TPROT","Protein (gm)","numeric",2166,24.4,5935
+"DR1TOT_L","DR1TCARB","Carbohydrate (gm)","numeric",2166,24.4,6418
+"DR1TOT_L","DR1TSUGR","Total sugars (gm)","numeric",2166,24.4,6201
+"DR1TOT_L","DR1TFIBE","Dietary fiber (gm)","numeric",2166,24.4,1179
+"DR1TOT_L","DR1TTFAT","Total fat (gm)","numeric",2166,24.4,6032
+"DR1TOT_L","DR1TSFAT","Total saturated fatty acids (gm)","numeric",2166,24.4,6498
+"DR1TOT_L","DR1TMFAT","Total monounsaturated fatty acids (gm)","numeric",2166,24.4,6485
+"DR1TOT_L","DR1TPFAT","Total polyunsaturated fatty acids (gm)","numeric",2166,24.4,6420
+"DR1TOT_L","DR1TCHOL","Cholesterol (mg)","numeric",2166,24.4,991
+"DR1TOT_L","DR1TATOC","Vitamin E as alpha-tocopherol (mg)","numeric",2166,24.4,3477
+"DR1TOT_L","DR1TATOA","Added alpha-tocopherol (Vitamin E) (mg)","numeric",2166,24.4,468
+"DR1TOT_L","DR1TRET","Retinol (mcg)","numeric",2166,24.4,1149
+"DR1TOT_L","DR1TVARA","Vitamin A, RAE (mcg)","numeric",2166,24.4,1556
+"DR1TOT_L","DR1TACAR","Alpha-carotene (mcg)","numeric",2166,24.4,1383
+"DR1TOT_L","DR1TBCAR","Beta-carotene (mcg)","numeric",2166,24.4,3217
+"DR1TOT_L","DR1TCRYP","Beta-cryptoxanthin (mcg)","numeric",2166,24.4,600
+"DR1TOT_L","DR1TLYCO","Lycopene (mcg)","numeric",2166,24.4,2886
+"DR1TOT_L","DR1TLZ","Lutein + zeaxanthin (mcg)","numeric",2166,24.4,2649
+"DR1TOT_L","DR1TVB1","Thiamin (Vitamin B1) (mg)","numeric",2166,24.4,4160
+"DR1TOT_L","DR1TVB2","Riboflavin (Vitamin B2) (mg)","numeric",2166,24.4,4496
+"DR1TOT_L","DR1TNIAC","Niacin (mg)","numeric",2166,24.4,6416
+"DR1TOT_L","DR1TVB6","Vitamin B6 (mg)","numeric",2166,24.4,4425
+"DR1TOT_L","DR1TFOLA","Total folate (mcg)","numeric",2166,24.4,887
+"DR1TOT_L","DR1TFA","Folic acid (mcg)","numeric",2166,24.4,548
+"DR1TOT_L","DR1TFF","Food folate (mcg)","numeric",2166,24.4,643
+"DR1TOT_L","DR1TFDFE","Folate, DFE (mcg)","numeric",2166,24.4,1096
+"DR1TOT_L","DR1TCHL","Total choline (mg)","numeric",2166,24.4,5242
+"DR1TOT_L","DR1TVB12","Vitamin B12 (mcg)","numeric",2166,24.4,2156
+"DR1TOT_L","DR1TB12A","Added vitamin B12 (mcg)","numeric",2166,24.4,516
+"DR1TOT_L","DR1TVC","Vitamin C (mg)","numeric",2166,24.4,3394
+"DR1TOT_L","DR1TVD","Vitamin D (D2 + D3) (mcg)","numeric",2166,24.4,573
+"DR1TOT_L","DR1TVK","Vitamin K (mcg)","numeric",2166,24.4,3722
+"DR1TOT_L","DR1TCALC","Calcium (mg)","numeric",2166,24.4,1914
+"DR1TOT_L","DR1TPHOS","Phosphorus (mg)","numeric",2166,24.4,2184
+"DR1TOT_L","DR1TMAGN","Magnesium (mg)","numeric",2166,24.4,737
+"DR1TOT_L","DR1TIRON","Iron (mg)","numeric",2166,24.4,3958
+"DR1TOT_L","DR1TZINC","Zinc (mg)","numeric",2166,24.4,3621
+"DR1TOT_L","DR1TCOPP","Copper (mg)","numeric",2166,24.4,3653
+"DR1TOT_L","DR1TSODI","Sodium (mg)","numeric",2166,24.4,3702
+"DR1TOT_L","DR1TPOTA","Potassium (mg)","numeric",2166,24.4,3309
+"DR1TOT_L","DR1TSELE","Selenium (mcg)","numeric",2166,24.4,3634
+"DR1TOT_L","DR1TCAFF","Caffeine (mg)","numeric",2166,24.4,602
+"DR1TOT_L","DR1TTHEO","Theobromine (mg)","numeric",2166,24.4,343
+"DR1TOT_L","DR1TALCO","Alcohol (gm)","numeric",2166,24.4,341
+"DR1TOT_L","DR1TMOIS","Moisture (gm)","numeric",2166,24.4,6672
+"DR1TOT_L","DR1TS040","SFA 4:0 (Butanoic) (gm)","numeric",2166,24.4,2169
+"DR1TOT_L","DR1TS060","SFA 6:0 (Hexanoic) (gm)","numeric",2166,24.4,1767
+"DR1TOT_L","DR1TS080","SFA 8:0 (Octanoic) (gm)","numeric",2166,24.4,1663
+"DR1TOT_L","DR1TS100","SFA 10:0 (Decanoic) (gm)","numeric",2166,24.4,2495
+"DR1TOT_L","DR1TS120","SFA 12:0 (Dodecanoic) (gm)","numeric",2166,24.4,3354
+"DR1TOT_L","DR1TS140","SFA 14:0 (Tetradecanoic) (gm)","numeric",2166,24.4,5004
+"DR1TOT_L","DR1TS160","SFA 16:0 (Hexadecanoic) (gm)","numeric",2166,24.4,6291
+"DR1TOT_L","DR1TS180","SFA 18:0 (Octadecanoic) (gm)","numeric",2166,24.4,5914
+"DR1TOT_L","DR1TM161","MFA 16:1 (Hexadecenoic) (gm)","numeric",2166,24.4,3698
+"DR1TOT_L","DR1TM181","MFA 18:1 (Octadecenoic) (gm)","numeric",2166,24.4,6469
+"DR1TOT_L","DR1TM201","MFA 20:1 (Eicosenoic) (gm)","numeric",2166,24.4,1832
+"DR1TOT_L","DR1TM221","MFA 22:1 (Docosenoic) (gm)","numeric",2166,24.4,398
+"DR1TOT_L","DR1TP182","PFA 18:2 (Octadecadienoic) (gm)","numeric",2166,24.4,6380
+"DR1TOT_L","DR1TP183","PFA 18:3 (Octadecatrienoic) (gm)","numeric",2166,24.4,4502
+"DR1TOT_L","DR1TP184","PFA 18:4 (Octadecatetraenoic) (gm)","numeric",2166,24.4,224
+"DR1TOT_L","DR1TP204","PFA 20:4 (Eicosatetraenoic) (gm)","numeric",2166,24.4,827
+"DR1TOT_L","DR1TP205","PFA 20:5 (Eicosapentaenoic) (gm)","numeric",2166,24.4,494
+"DR1TOT_L","DR1TP225","PFA 22:5 (Docosapentaenoic) (gm)","numeric",2166,24.4,410
+"DR1TOT_L","DR1TP226","PFA 22:6 (Docosahexaenoic) (gm)","numeric",2166,24.4,590
+"DR1TOT_L","DR1_300","Compare food consumed yesterday to usual","numeric",2063,23.3,5
+"DR1TOT_L","DR1_320Z","Total plain water drank yesterday (gm)","numeric",2106,23.8,678
+"DR1TOT_L","DR1_330Z","Total tap water drank yesterday (gm)","numeric",2106,23.8,405
+"DR1TOT_L","DR1BWATZ","Total bottled water drank yesterday (gm)","numeric",2106,23.8,372
+"DR1TOT_L","DR1TWSZ","Tap water source","numeric",2063,23.3,5
+"DR1TOT_L","DRD340","Shellfish eaten during past 30 days","numeric",2166,24.4,5
+"DR1TOT_L","DRD350A","Clams eaten during past 30 days","numeric",5827,65.8,3
+"DR1TOT_L","DRD350AQ","# of times clams eaten in past 30 days","numeric",8604,97.1,8
+"DR1TOT_L","DRD350B","Crabs eaten during past 30 days","numeric",5827,65.8,3
+"DR1TOT_L","DRD350BQ","# of times crabs eaten in past 30 days","numeric",8312,93.8,11
+"DR1TOT_L","DRD350C","Crayfish eaten during past 30 days","numeric",5827,65.8,3
+"DR1TOT_L","DRD350CQ","# of times crayfish eaten past 30 days","numeric",8798,99.3,7
+"DR1TOT_L","DRD350D","Lobsters eaten during past 30 days","numeric",5827,65.8,3
+"DR1TOT_L","DRD350DQ","# of times lobsters eaten past 30 days","numeric",8547,96.5,7
+"DR1TOT_L","DRD350E","Mussels eaten during past 30 days","numeric",5827,65.8,3
+"DR1TOT_L","DRD350EQ","# of times mussels eaten in past 30 days","numeric",8643,97.6,6
+"DR1TOT_L","DRD350F","Oysters eaten during past 30 days","numeric",5827,65.8,3
+"DR1TOT_L","DRD350FQ","# of times oysters eaten in past 30 days","numeric",8630,97.4,10
+"DR1TOT_L","DRD350G","Scallops eaten during past 30 days","numeric",5827,65.8,3
+"DR1TOT_L","DRD350GQ","# of times scallops eaten past 30 days","numeric",8503,96,7
+"DR1TOT_L","DRD350H","Shrimp eaten during past 30 days","numeric",5827,65.8,3
+"DR1TOT_L","DRD350HQ","# of times shrimp eaten in past 30 days","numeric",6200,70,17
+"DR1TOT_L","DRD350I","Other shellfish eaten past 30 days","numeric",5828,65.8,3
+"DR1TOT_L","DRD350IQ","# of times other shellfish eaten","numeric",8637,97.5,11
+"DR1TOT_L","DRD350J","Other unknown shellfish eaten past 30 d","numeric",5828,65.8,3
+"DR1TOT_L","DRD350JQ","# of times other unknown shellfish eaten","numeric",8845,99.8,5
+"DR1TOT_L","DRD350K","Refused on shellfish eaten past 30 days","numeric",5829,65.8,2
+"DR1TOT_L","DRD360","Fish eaten during past 30 days","numeric",2165,24.4,5
+"DR1TOT_L","DRD370A","Breaded fish products eaten past 30 days","numeric",4685,52.9,3
+"DR1TOT_L","DRD370AQ","# of times breaded fish products eaten","numeric",8232,92.9,13
+"DR1TOT_L","DRD370B","Tuna eaten during past 30 days","numeric",4685,52.9,3
+"DR1TOT_L","DRD370BQ","# of times tuna eaten in past 30 days","numeric",6996,79,20
+"DR1TOT_L","DRD370C","Bass eaten during past 30 days","numeric",4685,52.9,3
+"DR1TOT_L","DRD370CQ","# of times bass eaten in past 30 days","numeric",8800,99.3,7
+"DR1TOT_L","DRD370D","Catfish eaten during past 30 days","numeric",4685,52.9,3
+"DR1TOT_L","DRD370DQ","# of times catfish eaten in past 30 days","numeric",8513,96.1,12
+"DR1TOT_L","DRD370E","Cod eaten during past 30 days","numeric",4685,52.9,3
+"DR1TOT_L","DRD370EQ","# of times cod eaten in past 30 days","numeric",8159,92.1,14
+"DR1TOT_L","DRD370F","Flatfish eaten during past 30 days","numeric",4685,52.9,3
+"DR1TOT_L","DRD370FQ","# of times flatfish eaten past 30 days","numeric",8726,98.5,10
+"DR1TOT_L","DRD370G","Haddock eaten during past 30 days","numeric",4685,52.9,3
+"DR1TOT_L","DRD370GQ","# of times haddock eaten in past 30 days","numeric",8637,97.5,9
+"DR1TOT_L","DRD370H","Mackerel eaten during past 30 days","numeric",4685,52.9,3
+"DR1TOT_L","DRD370HQ","# of times mackerel eaten past 30 days","numeric",8775,99,8
+"DR1TOT_L","DRD370I","Perch eaten during past 30 days","numeric",4685,52.9,3
+"DR1TOT_L","DRD370IQ","# of times perch eaten in past 30 days","numeric",8784,99.1,6
+"DR1TOT_L","DRD370J","Pike eaten during past 30 days","numeric",4685,52.9,3
+"DR1TOT_L","DRD370JQ","# of times pike eaten in past 30 days","numeric",8848,99.9,5
+"DR1TOT_L","DRD370K","Pollock eaten during past 30 days","numeric",4685,52.9,3
+"DR1TOT_L","DRD370KQ","# of times pollock eaten in past 30 days","numeric",8688,98.1,11
+"DR1TOT_L","DRD370L","Porgy eaten during past 30 days","numeric",4685,52.9,3
+"DR1TOT_L","DRD370LQ","# of times porgy eaten in past 30 days","numeric",8842,99.8,6
+"DR1TOT_L","DRD370M","Salmon eaten during past 30 days","numeric",4685,52.9,3
+"DR1TOT_L","DRD370MQ","# of times salmon eaten in past 30 days","numeric",6823,77,18
+"DR1TOT_L","DRD370N","Sardines eaten during past 30 days","numeric",4685,52.9,3
+"DR1TOT_L","DRD370NQ","# of times sardines eaten past 30 days","numeric",8647,97.6,15
+"DR1TOT_L","DRD370O","Sea bass eaten during past 30 days","numeric",4685,52.9,3
+"DR1TOT_L","DRD370OQ","# of times sea bass eaten past 30 days","numeric",8777,99.1,6
+"DR1TOT_L","DRD370P","Shark eaten during past 30 days","numeric",4685,52.9,3
+"DR1TOT_L","DRD370PQ","# of times shark eaten in past 30 days","numeric",8856,100,4
+"DR1TOT_L","DRD370Q","Swordfish eaten during past 30 days","numeric",4685,52.9,3
+"DR1TOT_L","DRD370QQ","# of times swordfish eaten past 30 days","numeric",8815,99.5,4
+"DR1TOT_L","DRD370R","Trout eaten during past 30 days","numeric",4685,52.9,3
+"DR1TOT_L","DRD370RQ","# of times trout eaten in past 30 days","numeric",8707,98.3,10
+"DR1TOT_L","DRD370S","Walleye eaten during past 30 days","numeric",4685,52.9,3
+"DR1TOT_L","DRD370SQ","# of times walleye eaten in past 30 days","numeric",8764,98.9,6
+"DR1TOT_L","DRD370T","Other fish eaten during past 30 days","numeric",4685,52.9,3
+"DR1TOT_L","DRD370TQ","# of times other fish eaten past 30 days","numeric",7878,88.9,20
+"DR1TOT_L","DRD370U","Other unknown fish eaten in past 30 days","numeric",4685,52.9,3
+"DR1TOT_L","DRD370UQ","# of times other unknown fish eaten","numeric",8736,98.6,7
+"DR1TOT_L","DRD370V","Refused on fish eaten past 30 days","numeric",4687,52.9,3
+"HDL_L","SEQN","Respondent Sequence Number","numeric",0,0,8068
+"HDL_L","WTPH2YR","Phlebotomy 2 Year Weight","numeric",0,0,7138
+"HDL_L","LBDHDD","Direct HDL-Cholesterol (mg/dL)","numeric",1178,14.6,103
+"HDL_L","LBDHDDSI","Direct HDL-Cholesterol (mmol/L)","numeric",1178,14.6,103
+"LUX_L","SEQN","Respondent sequence number","numeric",0,0,7199
+"LUX_L","LUAXSTAT","Elastography exam status","numeric",0,0,4
+"LUX_L","LUARXNC","Reason for partial exam","numeric",6685,92.9,4
+"LUX_L","LUARXND","Reason exam not done","numeric",6995,97.2,4
+"LUX_L","LUARXIN","Reason ineligible","numeric",6998,97.2,3
+"LUX_L","LUAPNME","Exam wand type","character",0,0,3
+"LUX_L","LUANMVGP","Count:complete measures from final wand","numeric",467,6.5,23
+"LUX_L","LUANMTGP","Count:measures attempted with final wand","numeric",0,0,21
+"LUX_L","LUXSMED","Median stiffness (E), kilopascals (kPa)","numeric",499,6.9,273
+"LUX_L","LUXSIQR","Stiffness E interquartile range (IQRe)","numeric",512,7.1,146
+"LUX_L","LUXSIQRM","Ratio: Stiffness IQRe / median E","numeric",512,7.1,439
+"LUX_L","LUXCAPM","Median CAP, decibels per meter (dB/m)","numeric",500,6.9,294
+"LUX_L","LUXCPIQR","CAP interquartile range (IQRc)","numeric",513,7.1,149
+"TRIGLY_L","SEQN","Respondent sequence number","numeric",0,0,3996
+"TRIGLY_L","WTSAF2YR","Fasting Subsample 2 Year MEC Weight","numeric",0,0,3315
+"TRIGLY_L","LBXTLG","Triglyceride (mg/dL)","numeric",479,12,339
+"TRIGLY_L","LBDTRSI","Triglyceride (mmol/L)","numeric",479,12,339
+"TRIGLY_L","LBDLDL","LDL-Cholesterol, Friedewald (mg/dL)","numeric",516,12.9,205
+"TRIGLY_L","LBDLDLSI","LDL-Cholesterol, Friedewald (mmol/L)","numeric",516,12.9,205
+"TRIGLY_L","LBDLDLM","LDL-Cholesterol, Martin-Hopkins (mg/dL)","numeric",516,12.9,200
+"TRIGLY_L","LBDLDMSI","LDL-Cholesterol, Martin-Hopkins (mmol/L)","numeric",516,12.9,200
+"TRIGLY_L","LBDLDLN","LDL-Cholesterol, NIH equation 2 (mg/dL)","numeric",483,12.1,206
+"TRIGLY_L","LBDLDNSI","LDL-Cholesterol, NIH equation 2 (mmol/L)","numeric",483,12.1,206
